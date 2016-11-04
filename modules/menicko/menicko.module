@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Module file for page_example_module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\Entity\Node;
+
+
+function menicko_theme() {
+  return [
+    'menicko_menu' => [
+      'template' => 'menicko_menu',
+      'variables' => [
+        'denne_menu' => NULL,
+        'vip' => NULL,
+        'misc' => NULL,
+        'deserts' => NULL,
+        'drinks' => NULL,
+        'perm_menu' => NULL,
+      ],
+    ],
+    'napojovy_listok' => [
+      'template' => 'napojovy_listok',
+      'variables' => [
+        'listok' => NULL,
+      ],
+    ],
+  ];
+}
+

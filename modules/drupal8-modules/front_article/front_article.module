@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function front_article_theme() {
+  return array(
+    'front_info_block' => array(
+      'variables' => array('nodes' => NULL),
+      'template' => 'front-info-block',
+    ),
+  );
+}

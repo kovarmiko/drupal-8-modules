@@ -1,0 +1,7 @@
+tyzdenne_menu:
+  title: 'Menu'
+  description: 'Stránka zobrazuje momentálne týždenne menu'
+  parent: main
+  route_name: tyzdenne_menu
+  weight: 2
+  menu_name: main 

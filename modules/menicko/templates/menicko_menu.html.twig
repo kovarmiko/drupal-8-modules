@@ -1,0 +1,33 @@
+<div id="menu-wrapper">
+    <style>
+        #main-content{
+            background-image: url("/pila-banova.jpg");
+        }
+    </style>
+  <!-- Nav tabs -->
+  <div id="menu-img-wrapper">
+      
+      <img src="/sites/default/files/menick_transparent.png" alt="Home">
+      <h3 class="restauracia">Reštaurácia Meníčko</h3>
+  </div>
+  
+      <div class="clearfix"></div>
+  <ul class="menu" id="menu-menu" role="tablist">
+    <li role="presentation"><a href="#menu" aria-controls="home" role="tab" data-toggle="tab">Denné Menu</a></li>
+    <li role="presentation"><a href="#perm-menu" aria-controls="profile" role="tab" data-toggle="tab">Stále Menu</a></li>
+    <li role="presentation"><a href="#vip" aria-controls="settings" role="tab" data-toggle="tab">VIP Zóna</a></li>
+    <li role="presentation"><a href="#misc" aria-controls="messages" role="tab" data-toggle="tab">Doplnky</a></li>
+    <li role="presentation"><a href="#deserts" aria-controls="messages" role="tab" data-toggle="tab">Dezerty</a></li>
+    <li role="presentation"><a href="#drinks" aria-controls="messages" role="tab" data-toggle="tab">Nápojový lístok</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="menu"><div id="denne-menu">{{ denne_menu|raw }}</div></div>
+      <div role="tabpanel" class="tab-pane" id="perm-menu"><div id="denne-menu">{{perm_menu|raw }}</div></div>
+      <div role="tabpanel" class="tab-pane" id="vip"><div id="denne-menu">{{vip|raw }}</div></div>
+      <div role="tabpanel" class="tab-pane" id="misc"><div id="denne-menu">{{misc|raw }}</div></div>
+      <div role="tabpanel" class="tab-pane" id="deserts"><div id="denne-menu">{{deserts|raw }}</div></div>
+      <div role="tabpanel" class="tab-pane" id="drinks"><div id="denne-menu">{{drinks|raw }}</div></div>
+  </div>
+</div>

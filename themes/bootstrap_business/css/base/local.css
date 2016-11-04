@@ -1,0 +1,243 @@
+/* Custom CSS overrides */
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+}
+
+#toTop{
+    display: none;
+}
+
+#block-bootstapcarousel h2{
+    display: none;
+}
+#header{
+    margin-top: 20px;
+}
+
+.marketing {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#block-featuresinthefront h2{
+    display: none;
+}
+
+.node footer{
+    border-color: transparent;
+}
+
+html{
+    
+}
+.carousel-indicators{
+    display: none;
+}
+/*CIRCLES AFTER SLIDESHOW*/
+.responsive-circle {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+
+.responsive-circle div {
+    color: white;
+    float: left;
+    line-height: 1em;
+    margin-top: -0.5em;
+    padding-top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.color1-circle::after {
+    background: #9C2A00;
+}
+.responsive-circle::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+
+/* Give pipes on the main menu */
+
+ul.menu
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.menu li:not(:first-child):before {
+    content: " | ";
+    color: #999;
+    font-size: 17px;
+}
+
+#site-name a {
+    color : rgb(158,39,33);
+    font-family: "Baker";
+}
+
+#slide1{
+	position: relative;
+	top: -66px;
+
+}
+
+/* CAROUSEL FADE EFFECTS */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* container max width! */
+.container{
+    max-width: 760px;
+}
+
+article h2 {
+    color: rgb(153, 153, 153);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.m-t-15{
+    margin-top: 15px;
+}
+
+ul.menu { margin: 0; padding: 0; margin-left: 0!important; text-align: center !important;}
+#menu-img-wrapper{
+    text-align: center;
+    min-height: 140px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-bottom: 1px solid #999;
+}
+
+#menu-img-wrapper img{
+    height: 100px;
+}
+
+#menu-wrapper{
+    background-image: url("/paper-bg.jpg");
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#menu-menu {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+#menu-wrapper h3.restauracia {
+    color: rgb(158,39,33);
+}
+
+#denne-menu{
+    text-align: center;
+    
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+ul.menu li a, nav ul.links li a {
+    font-size: 16px;
+}
+
+#menu-menu li {
+    padding:5px;
+}
+
+#menu-menu li:before{
+    content: '';
+}
+
+
+#block-menu h2 {
+    font-size: 24px;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0px 20px 0px;
+    text-transform: uppercase;
+    color: rgb(153, 153, 153);
+}
+
+.menu-intro {
+    padding: 20px;
+}

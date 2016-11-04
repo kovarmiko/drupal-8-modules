@@ -1,0 +1,21 @@
+tyzdenne_menu:
+  path: '/menu'
+  defaults:
+    _controller: '\Drupal\menicko\Controller\TestModuleController::arguments'
+  requirements:
+    _permission: 'access content'
+    _title: 'Týždenné menu'
+    
+json_response:
+  path: '/json_menu'
+  defaults:
+    _controller: '\Drupal\menicko\Controller\TestModuleController::json_response'
+  requirements:
+    _permission: 'access content'
+    
+test_template:
+  path: '/testtemplate'
+  defaults:
+    _controller: '\Drupal\menicko\Controller\TestModuleController::template'
+  requirements:
+    _permission: 'access content' 

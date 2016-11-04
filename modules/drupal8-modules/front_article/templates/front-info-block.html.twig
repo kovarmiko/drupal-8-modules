@@ -1,0 +1,9 @@
+{# empty Twig template #}
+
+<h1>Node Titles</h1>
+
+<ul>
+    {% for node in nodes %}
+        <li>{{ node.title.value }}</li>
+    {% endfor %}
+</ul>

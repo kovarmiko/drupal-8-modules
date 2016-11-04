@@ -1,0 +1,5 @@
+name: Menicko
+type: module
+description: 'Menicko related functionality.'
+package: Menicko
+core: 8.x
